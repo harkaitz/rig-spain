@@ -6,7 +6,7 @@ The names and surnames data has been taken from Marc Boquet's
 "spanish-names" project [here](https://github.com/marcboquet/spanish-names).
 
 The town and street data has been taken from the INE (National Institute of
-statistics).
+statistics). I got some inspiration [here](https://github.com/inigoflores/ds-codigos-postales-ine-es/blob/master/scripts/lib/ProcessCommand.php).
 
 ## Prerequisites for the download.sh script.
 
@@ -15,8 +15,9 @@ statistics).
 - sh-getsrc
 - bsdtar
 - wget
+- gcc compiler
 
-## Installation
+## Installation (Only needs make)
 
 As always.
 
