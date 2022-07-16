@@ -5,3 +5,11 @@ all: $(FILES)
 install:
 	mkdir -p $(DESTDIR)$(PREFIX)/share/rig/spain
 	cp $(FILES) $(DESTDIR)$(PREFIX)/share/rig/spain
+## -- license --
+ifneq ($(PREFIX),)
+install: install-license
+install-license: LICENSE
+	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/rig-spain
+	cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/rig-spain
+endif
+## -- license --
