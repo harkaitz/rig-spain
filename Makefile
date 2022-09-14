@@ -9,7 +9,8 @@ install:
 ifneq ($(PREFIX),)
 install: install-license
 install-license: LICENSE
-	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/rig-spain
-	cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/rig-spain
+	@echo 'I share/doc/rig-spain/LICENSE'
+	@mkdir -p $(DESTDIR)$(PREFIX)/share/doc/rig-spain
+	@cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/rig-spain
 endif
 ## -- license --
