@@ -8,7 +8,6 @@ install:
 ## -- license --
 install: install-license
 install-license: LICENSE
-	@echo 'I share/doc/rig-spain/LICENSE'
-	@mkdir -p $(DESTDIR)$(PREFIX)/share/doc/rig-spain
-	@cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/rig-spain
+	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/rig-spain
+	cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/rig-spain
 ## -- license --
